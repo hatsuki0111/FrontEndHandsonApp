@@ -112,6 +112,10 @@ body{
   }
 
 @media (max-width: 768px) {
+  /*横揺れ防止*/
+  body{overflow-x:hidden;}
+  html{overflow-x:hidden;}
+  
   .wrapper{
     margin: 0 8px;
   }
