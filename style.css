@@ -94,7 +94,7 @@ body{
     display: flex;
   }
   .works-p {
-    border-bottom: 1px dashed #bec2c7;  
+    /*border-bottom: 1px dashed #bec2c7;  */
     padding: 20px 8px;
     flex: 0 0 400px;
  }
@@ -115,7 +115,7 @@ body{
   /*横揺れ防止*/
   body{overflow-x:hidden;}
   html{overflow-x:hidden;}
-  
+
   .wrapper{
     margin: 0 8px;
   }
@@ -128,7 +128,7 @@ body{
   }
 
   .nav {
-    background-color: transparent;/*透明にする*/
+    background-color: transparent;
     
   }
   
