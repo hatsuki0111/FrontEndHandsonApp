@@ -94,7 +94,6 @@ body{
     display: flex;
   }
   .works-p {
-    /*border-bottom: 1px dashed #bec2c7;  */
     padding: 20px 8px;
     flex: 0 0 400px;
  }
