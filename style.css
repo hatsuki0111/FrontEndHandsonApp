@@ -83,6 +83,7 @@ img {
   }
 .works{
     display: flex;
+    
   }
   .works-p {  
     padding: 20px 8px;

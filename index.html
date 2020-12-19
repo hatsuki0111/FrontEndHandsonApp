@@ -7,6 +7,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
+
+  <script>
+     window.addEventListener("hashchange",chghash,false);
+        window.addEventListener("load",chghash,false);
+
+       function chghash(){
+        var hash = decodeURIComponent(window.location.hash.slice(1));
+        var top = document.getElementById("top");
+        var portfolio = document.getElementById("portfolio");
+        var whoami = document.getElementById("whoami");
+        var works = document.getElementById("works");
+        var contact = document.getElementById("contact");
+        if(hash === 'top'){
+          top.style.backgroundColor = "black";
+          portfolio.style.backgroundColor = " blue";
+          whoami.style.backgroundColor = " blueviolet";
+          works.style.backgroundColor = " aqua";
+          contact.style.backgroundColor = " chartreuse";
+        }else if(hash === 'portfolio'){
+          top.style.backgroundColor = "brown";
+          portfolio.style.backgroundColor = "black";
+          whoami.style.backgroundColor = " blueviolet";
+          works.style.backgroundColor = " aqua";
+          contact.style.backgroundColor = " chartreuse";
+        }else if(hash === 'whoami'){
+          top.style.backgroundColor = "brown";
+          portfolio.style.backgroundColor = "blue";
+          whoami.style.backgroundColor = " black";
+          works.style.backgroundColor = " aqua";
+          contact.style.backgroundColor = " chartreuse";
+        }else if(hash === 'works'){
+          top.style.backgroundColor = "brown";
+          portfolio.style.backgroundColor = "blue";
+          whoami.style.backgroundColor = " blueviolet";
+          works.style.backgroundColor = " black";
+          contact.style.backgroundColor = " chartreuse";
+        }else if(hash === 'contact'){
+          top.style.backgroundColor = "brown";
+          portfolio.style.backgroundColor = "blue";
+          whoami.style.backgroundColor = " blueviolet";
+          works.style.backgroundColor = " aqua";
+          contact.style.backgroundColor = " black";
+        }
+      }
+    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -32,19 +77,19 @@
 
 
     <div class="portfolio" id="portfolio"> <!--ここ-->
-        <h1>ポートフォリオだよ</h1>
+        <h1>ポートフォリオ</h1>
     </div>
 
     <div class="whoami" id="whoami">　<!--ここ-->
         <h2>whoami自己紹介</h2>
-        <p>私は公立千歳科学技術大学の科技大太郎だよ。<br> なんつって</p>
+        <p>私は公立千歳科学技術大学の科技大太郎だよ。</p>
     </div>
 
-    <div class="workscolor">
-      <h2 id="works">works</h2>
+    <div id="works" class="workscolor">
+      <h2>works</h2>
       <div class="works">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJUvYGK45eOFgPFlX7pin1W3ptz8jq5i02JA&usqp=CAU" alt="" class="works-img">
-      <p class="works-p">これはCISTLTサークルのホームページです。画像はサークルメンバーでチーム開発したローランドさんです。React.jsをつかっています。</p>
+      <p class="works-p">これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。</p>
       </div>
     </div>
   
